@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java-shell-output/Java-shell-output.iml" filepath="$PROJECT_DIR$/Java-shell-output/Java-shell-output.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaShell.iml" filepath="$PROJECT_DIR$/.idea/JavaShell.iml" />
+    </modules>
+  </component>
+</project>
