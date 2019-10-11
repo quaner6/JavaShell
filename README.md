@@ -1,2 +1,9 @@
 # JavaShell
-采用Java调用shell
+采用Java调用shell（shell输出日志很大的情况）
+
+当Shell输出或输入日志很多的时候，输入或输出日志会占满JVM空间，导致Shell脚本没法正常获取返回值，无法进行下一步操作。
+
+本例仔细观察Java调用Shell的Process方法源码。每当调用Process方法时，new一个StringBuffer来接收输入、输出日志，
+通过垃圾回收机制来释放内存，防止JVM占满的情况。
+
+**使用方式**：复制Model及Service下的类。通过调用LocalShellCommandExecutor类的exec方法即可。调用ExecuteResult类的getExitCode方法获取Shell脚本返回值。
